@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+  schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>A sample collection of bibliographic citations for source texts.</title>
+        <respStmt>
+          <resp>Created by</resp>
+          <name>Chiara Martignano</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p>This document is meant only for testing purposes inside of the EVT demo and the EVT release package.</p>
+        <p>Do not copy nor publish.</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Born digital.</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+
+  <text>
+    <body>
+      div>
+            <head>Sources</head>
+            <cit xml:id="Av_Fabulae_I_11_6">
+                <bibl>
+                    <author ref="#Aviano">Aviano</author>
+                    <title ref="#Av_Fabulae">Fabulae</title>
+                    <citedRange corresp="#Av_Fabulae" target="https://digilander.libero.it/uraniaceleste/latino/ZANASI1/P7.html">I, vv. 11-6</citedRange>
+                    <!-- @comm.Ale: ho aggiunto un link a un sito bruttissimo a titolo d'esempio -->
+                </bibl>
+                <quote>Ne mireris, ait, deceptum fraude maligna / Vix miserum vacua delituisse fuga: / Nam quae praeda, rogo, quae spes contingere posset, / Iurgia nutricis cum mihi verba darent? / Haec sibi dicta putet, seque hac sciat arte notari, / Foemineam quisquis credidit esse fidem.</quote>
+                <!-- @comm.Ale: anche dentro al quote vanno i tag <l>? -->
+            </cit>
+            <cit xml:id="Vita_ElioD"> 
+                <bibl> 
+                    <author ref="#E.D.">Elio Donato</author> 
+                    <title ref="#Vita">Vita Vergilii</title> 
+                   
+                    
+                </bibl> 
+                <quote> Nocte pluit tota, redeunt spectacula mane: /divisum imperium cum Iove Caesar habet</quote> 
+            </cit>
+            <!-- La cit per l'edizione dell'opera Vite de' Pittori Antichi è tutta puramente esemplificativa; ho inserito il link alla digitalizzazione Google dell'edizione Stella 1667, I edizione, che quindi non corrisponde all'edizione menzionata da Leopardi.  -->
+            <cit xml:id="Dati_Pittori">
+                <bibl>
+                    <author ref="#Dati">Carlo Roberto Dati</author>
+                    <title ref="#Pittori">Vite de' Pittori Antichi</title>
+                    <citedRange corresp="#Pittori">ed. Siena, 1795, p.57.66</citedRange>
+                </bibl>
+                <quote></quote>
+            </cit>
+            <!-- La cit per il Discorso sopra la poesia è esemplificativa, tratta dal Commento dell'edizione Mondadori, p.3232-->
+            <cit xml:id="Parini_Discorso">
+                <bibl>
+                    <author ref="#Parini">Parini</author>
+                    <title ref="#Discorso">Discorso sopra la poesia</title>
+                    <citedRange corresp="#Discorso">Discorso sopra la poesia, in Opere, a cura di G.M. Zuradelli, Torino 1965, vol. II, p.271</citedRange>
+                </bibl>
+                <quote>L'anima nostra, che ama di essere sempre in azione e in movimento, niente più aborre che la noia</quote>
+            </cit>
+        </div>
+    </body>
+  </text>
+</TEI>
